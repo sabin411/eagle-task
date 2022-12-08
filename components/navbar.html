@@ -1,0 +1,25 @@
+<nav class="nav-bar custom-container active">
+  <div class="logo-and-menu-container">
+    <a href="/" class="logo">
+        <img src="../images/logo.png" alt="Logo">
+    </a>
+    <button class="menu-btn">
+      <i class="menu fa-solid fa-bars"></i>
+      <i class="cross fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <ul class="nav-links">
+    <li><a class="link" href="/recipes">Recipes</a></li>
+    <li><a class="link" href="/documents">Documents</a></li>
+    <li><a class="link" href="/warranty">Warranty</a></li>
+  </ul>
+    <a class="toggle-language link" href="#">SE</a>
+</nav>
+
+<script>
+  // in jquery
+  $('.menu-btn').on('click', () => {
+    $('.nav-bar').toggleClass('active');
+  })
+
+</script>

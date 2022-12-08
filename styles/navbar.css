@@ -1,0 +1,113 @@
+.nav-bar{
+    background-color: var(--neutral-900);
+    color: var(--primary-900);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.cross{
+    display: none;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.logo img{
+    height: 35px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+.nav-links li{
+    font-size: var(--font-p);
+    font-weight: normal;
+}
+
+
+/* NOTE: Adding a hamburger menu */
+@media (max-width:640px){
+    .nav-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 40px;
+        height: auto;
+        gap: 20px
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .nav-links li{
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links li a{
+        display: inline-block;
+        width: 100%;
+        font-size: var(--font-p);
+        font-weight: normal;
+        padding: 20px 0;
+        border-radius: 5px;
+    }
+    .toggle-language{
+        display: inline-block;
+        display: none;
+        font-size: var(--font-p);
+        font-weight: normal;
+        padding: 20px 0;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a:hover, 
+    .toggle-language:hover
+    {
+        background-color: var(--primary-600);
+        color: var(--neutral-900);
+    }
+
+    .logo-and-menu-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .menu-btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: var(--font-h5);
+        color: var(--primary-800);
+        cursor: pointer;
+    }
+
+    .nav-bar.active .nav-links{
+        display: flex;
+    }
+    .nav-bar.active .toggle-language{
+        display: inline-block;
+    }
+
+    .nav-bar.active .menu-btn .cross{
+        display: block;
+    }
+    
+    .nav-bar.active .menu-btn .menu{
+        display: none;
+    }
+}

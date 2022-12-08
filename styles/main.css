@@ -1,0 +1,533 @@
+@import url('../fonts/Roboto-Regular.ttf');
+@import url('../fonts/Roboto-Bold.ttf');
+@import url('../fonts/Roboto-Medium.ttf');
+@import url('../fonts/Roboto-Light.ttf');
+@import url('./variables.css');
+@import url('./generic.css');
+@import url('./navbar.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* banner styling starts */
+.banner-wrapper{
+    background-image: url('../images/main-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    min-height: 550px;
+    width: 100vw;
+}
+/* banner styling ends here */
+
+/* hero description starts here */
+.description-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    column-gap: 100px;
+}
+
+.description-section__left{
+    width: 70%;
+}
+
+.sub-text{ 
+    font-size: var(--font-small);
+    color: var(--primary-500);
+    font-weight: 100;
+    margin-bottom: 28px;
+}
+
+.description-section__left h1{
+    margin-bottom: 24px;
+}
+
+.description-section__left h1 .title__bolder{
+    font-weight: bold;
+}
+
+.description-section__right{
+    width: 30%;
+    border-radius: 10px;
+    padding: 40px 36px;
+    background: rgb(231,231,231);
+    background: linear-gradient(45deg, rgba(231,231,231,1) 14%, rgba(242,242,242,1) 66%, rgba(251,251,251,1) 100%);
+}
+
+.weird-button{
+    width: 50px;
+    height: 30px;
+    border-radius: 25px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--primary-800);
+}
+.letter-C{
+    position: relative;
+    height: 23px;
+    width: 23px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: var(--neutral-700);
+}
+.letter-C::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-800);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.letter-C::after{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: var(--primary-800);
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.description-section__title{
+    font-size: var(--font-p);
+    font-weight: 600;
+    margin-bottom: 10px; 
+    color: var(--primary-700);
+}
+
+.description-section__text{
+    font-size: var(--font-medium);
+    font-weight: 100;
+    margin-bottom: 20px;
+    line-height: var(--font-h5);
+}
+
+.app-availability{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.app-availability a{
+    width: 50%;
+}
+.app-availability a img{
+    width: 100%;
+}
+/* hero description ends here */
+
+/* precise cooking section styling starts here */
+.precise-cooking-section{
+    position: relative;
+    background-image: url('../images/precision-bg-image.png');
+    width: 100%;
+    height: 60vh;
+    min-height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.precise-cooking-section__text{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    color: var(--neutral-700);
+    font-size: var(--font-p);
+    font-weight: 100;
+}
+
+.precise-cooking-section__text span{
+    font-weight: 600;
+}
+/* precise cooking section styling ends here */
+
+/* celsius cooking section styling starts here */
+.celsius-cooking-section{
+    background-color: var(--neutral-800);
+}
+
+.celsius-cooking-content{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.celsius-cooking-section h2{
+    margin-right: 100px;
+    font-weight: 600;
+}
+
+.celsius-cooking-section p{
+    width: 45%;
+}
+/* celsius cooking section styling ends here */
+
+
+/* features section styling starts here */
+
+.features-section-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features-section_image-wapper{
+    position: relative;
+    height: 50vh;
+    min-height: 500px;
+    background-image: url("../images/feature-1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 55%;
+}
+
+
+.features-section_image-wapper.stove-image-wrapper{
+    /* position: absolute; */
+    background-image: url("../images/stove.png");
+}
+
+.features-section__description{
+    width: 45%;
+    /* max-width: 485px; */
+    padding: 0 50px;   
+}
+
+.features-section__description-second-child{
+    /* padding-right: 100px;
+    padding-left: 0; */
+}
+
+.description-title{
+    margin-bottom: 24px;
+}
+
+.description-text{
+    margin-bottom: 28px;
+}
+
+.progress-bar-wrapper{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.progress-bar-wrapper p{
+    color: var(--primary-600);
+    font-size: var(--font-small);
+}
+
+.progress-bar{
+    width: 200px;
+    height: 15px;
+    border-radius: 25px;
+    background-color: var(--neutral-600);
+}
+.progress-bar__level{
+    height: 100%;
+    width: 40%;
+    border-radius: 25px;
+    background-color: var(--primary-800);
+    color: var(--neutral-800);
+    font-size: var(--font-small);
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+
+.features-section__two{
+    flex-direction: row-reverse;
+}
+
+.stove-image-text{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: var(--neutral-700);
+    font-size: var(--font-p);
+    font-weight: 100;
+    text-align: center;
+}
+
+.stove-image-text span{
+    font-weight: 600;
+}
+/* features section styling ends here */
+
+/* Technology behind sectino styling starts here */
+.technology-behind-section{
+    position: relative;
+    padding-top: 150px;
+    margin-bottom: 300px;
+}
+.technology-behind-section__upper-text{
+}
+
+.technology-behind-section__upper-text h3{
+    margin-bottom: 20px;
+}
+
+.technology-behind-section__upper-text p{
+    width: 50%;
+}
+
+.pan-img-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pan-img-wrapper img{
+    width: 60%;
+}
+.pan-illustration-text p{
+    width: 35%;
+}
+.kitchen-stove-img-wrapper{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.kitchen-stove-img-wrapper img{
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.kitchen-stove-img-wrapper .connecting-line{
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    width: 1px;
+    height: 360px;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-500);
+}
+.connecting-line::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--primary-500);
+}
+
+.connecting-line::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--primary-500);
+}
+
+/* Technology behind sectino styling ends here */
+
+
+/* grid image section styling starts here */
+
+.grid-image-section{
+    padding-top: 450px;
+    background-color: var(--neutral-600);
+    height: 200vh;
+}
+
+.grid-image-contents{
+    display: flex;
+    column-gap: 25px;
+}
+
+.grid-image-contents__left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 45%;
+}
+.grid-image-contents__right{
+    width: 55%;
+    object-fit: cover;
+}
+
+.grid-image-contents__right img{
+    width: 100%;
+}
+
+.final-text-container{
+    margin-top: 100px;
+}
+
+.final-text{
+    margin-left: 50px;
+    font-weight: 100;
+}
+/* grid image section styling ends here */
+
+
+
+/* media query for responsiveness */
+
+@media (max-width: 1280px) {
+   .grid-image-section{
+        padding-top: 350px;
+    }
+    .description-section__left{
+        width: 60%;
+    }
+    .description-section__right{
+        width: 40%;
+    }
+    .kitchen-stove-img-wrapper .connecting-line{
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px){
+    .description-section__right{
+        margin-top:20px;
+    }
+    .description-section{
+        flex-direction: column;
+    }
+    .description-section__left{
+        width: 100%;
+    }
+    .description-section__right{
+        width: 100%;
+    }
+
+    .app-availability{
+        margin-top: 20px;
+        justify-content: flex-start;
+    }
+    .app-availability a{
+        max-width: 200px;
+    }
+
+
+    .celsius-cooking-section h2{
+        white-space: nowrap;
+        margin-right: 20px;
+    }
+    .celsius-cooking-section p{
+        width: 90%;
+    }
+
+    
+    .features-section-container{
+        flex-direction: column;
+    }
+    .features-section_image-wapper{
+        width: 100%;
+    }
+    .features-section__description{
+        width: 100%;
+        padding:  28px 20px;
+    }
+
+    /* technology behind media starts here */
+    .technology-behind-section__upper-text p{
+        width: 100%;
+    }
+    .pan-img-wrapper img{
+        width: 80%;
+    }
+    .kitchen-stove-img-wrapper .connecting-line{
+        height: 250px;
+        top: clamp(-2rem, -4.4781rem + 9.3294vw, 0rem);
+    }
+    .pan-illustration-text p{
+        width: 45%;
+    }
+    .technology-behind-section{
+        padding-top: 10px;
+        margin-bottom: 150px;
+    }
+    /* technology behind media ends here */
+
+    /* grid image section media starts here */
+    .grid-image-section{
+        padding-top: 200px;
+        height: auto;
+    }
+    .grid-image-contents{
+        flex-direction: column;
+        row-gap: 20px;
+        column-gap: 0;
+    }
+    .grid-image-contents__left{
+        width: 100%;
+    }
+    .grid-image-contents__right{
+        width: 100%;
+    }
+    /* grid image section media ends here */
+}
+
+@media (max-width:640px){
+    #main-content{
+        margin-top: 79px;
+    }
+    /* celsius section responsive styling starts here */
+    .celsius-cooking-content{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    /* celsius section responsive styling ends here */
+
+    .precise-cooking-section__text{
+        left: 60%;
+    }
+
+    .features-section__description{
+        padding:  32px 40px;
+    }
+
+    .technology-behind-section{
+        margin-bottom: 0;
+    }
+    .pan-img-wrapper img{
+        width: 100%;
+    }
+
+    .kitchen-stove-img-wrapper{
+        position: relative;
+    }
+
+    .kitchen-stove-img-wrapper img{
+        width: 100%;
+    }
+    .kitchen-stove-img-wrapper .connecting-line{
+        display: none;
+    }
+    .pan-illustration-text p{
+        width: 100%;
+    }
+
+    .grid-image-section{
+        padding-top: 100px;
+    }
+}
